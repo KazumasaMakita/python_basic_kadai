@@ -7,17 +7,15 @@ Original file is located at
     https://colab.research.google.com/drive/1PgpMBvZwPsMUY8-LPZlXGXI4TBfz0c3n
 """
 
-class Human():
+class Human:
   #Humanクラスの初期設定
-  def __init__(self):
-    self.name = ""
-    self.age = ""
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
   #出力メソッド
   def printinfo(self, name, age):
     print(f"{name}の年齢は{age}歳です。")
 #インスタンス化
-human = Human()
-human.name = "牧田和将"
-human.age = 34
+human1 = Human("牧田和将",34)
 #出力
-human.printinfo(human.name, human.age)
+human.printinfo(human1.name, human1.age)
